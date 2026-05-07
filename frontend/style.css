@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: Arial;
+    overflow-x: hidden;
+}
+
+.hero {
+    height: 100vh;
+    text-align: center;
+    background: radial-gradient(circle at center, #2b0a4a, black);
+}
+
+.logo {
+    font-size: 80px;
+    color: #b300ff;
+    text-shadow: 0 0 20px #7a00ff;
+    margin-top: 120px;
+}
+
+.subtitle {
+    color: #00f0ff;
+    letter-spacing: 5px;
+}
+
+.enter-btn {
+    margin-top: 40px;
+    padding: 15px 40px;
+    border: 2px solid #b300ff;
+    background: transparent;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 20px #7a00ff;
+}
+
+.enter-btn:hover {
+    background: #b300ff;
+}
+
+#products {
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+}

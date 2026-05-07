@@ -1,0 +1,24 @@
+<h1>Admin Panel</h1>
+
+<input id="name" placeholder="Product Name">
+<input id="price" placeholder="Price">
+<button onclick="add()">Add</button>
+
+<script>
+function add(){
+    fetch("/api/add",{
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body: JSON.stringify({
+            name: document.getElementById("name").value,
+            price: document.getElementById("price").value
+        })
+    }).then(()=>location.reload());
+}
+</script>
+
+<ul>
+{% for p in products %}
+<li>{{p.name}} - ${{p.price}}</li>
+{% endfor %}
+</ul>
